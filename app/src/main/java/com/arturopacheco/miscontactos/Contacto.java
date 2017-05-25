@@ -7,8 +7,12 @@ package com.arturopacheco.miscontactos;
 public class Contacto {
 
 
+
+    private long Id;
+
     private String Nombre;
     private String Telefono;
+    private String Email;
 
     public Contacto(String nombre, String telefono, String email) {
         Nombre = nombre;
@@ -16,7 +20,15 @@ public class Contacto {
         Email = email;
     }
 
-    private String Email;
+
+
+    public long getId() {
+        return Id;
+    }
+
+    public void setId(long id) {
+        Id = id;
+    }
 
     public String getNombre() {
         return Nombre;
